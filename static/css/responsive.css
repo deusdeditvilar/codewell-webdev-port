@@ -1,0 +1,124 @@
+/* @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.1rem!important;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    #hero-sub {
+        max-width: 100%;
+    }
+
+    .nav-center, .nav-end button {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .imgs {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        width: 100%;
+    }
+
+    .imgs div {
+        padding: 0 15px;
+    }
+} */
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    #companies ul {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        row-gap: 50px;
+    }
+
+    .inner-info {
+        padding: 50px 20px;
+        row-gap: 0;
+    }
+
+    .inner-info h1 {
+        font-size: 2rem;
+    }
+
+    .nav-center {
+        display: none;
+    }
+
+    #btn-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        right: 2%;
+        top: 50%;
+        z-index: 10;
+        transition: all 0.7s ease;
+    }
+
+    .menu-mobile {
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+        width: 100%;
+        left: 100%;
+        top: 0;
+        display: block;
+        z-index: 6;
+        transition: all 1s ease;
+    }
+
+    .menu-mobile.show {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .hero-section {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    p {
+        font-size: 1rem!important;
+    }
+
+    #companies ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        padding-right: 0;
+    }
+}
